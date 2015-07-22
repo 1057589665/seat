@@ -24,6 +24,13 @@
              			$("#dialog").hide();
              			$('body').css('overflow-y','scroll')
 				});
+				$('.dialog_content div').bind("click",function(e){  
+             			if($(this).hasClass("selected-station")){
+             					$(this).removeClass("selected-station");
+             			}else{
+	             			$(this).addClass("selected-station");
+             			}
+				});
 				$('.foot').bind("click",function(e){  
              			$('#dialog').show();
              			$('.dialog').css('visibility','visible')
@@ -417,9 +424,10 @@
 					<div>确定</div>
 				</div>
 				<div class="dialog_content">
-					<div>车站1</div>
-					<div>车站1</div>
-					<div>车站1</div>
+					<div class="un-selected-station">不限</div>
+					<div class="un-selected-station">车站1</div>
+					<div class="un-selected-station">车站1</div>
+					<div class="un-selected-station">车站1</div>
 				</div>
 			</div>
 		</div>

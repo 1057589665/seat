@@ -48,6 +48,7 @@ a {
 	-webkit-user-select: none;
 	text-decoration: none;
 }
+
 body {
 	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 	margin: 0;
@@ -66,10 +67,9 @@ body {
 	position: fixed;
 	left: 0;
 	top: 0;
-	margin-bottom: 0.8rem;
 	border-bottom: 1px solid gainsboro;
 	background-color: #FFFFFF;
-	z-index: 2;
+	box-sizing: border-box;
 }
 .headig div {
 	height: 2.5rem;
@@ -80,7 +80,7 @@ body {
 	text-align: center;
 	line-height: 2.5rem;
 	color: #289eff;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 }
 .headig .back {
@@ -98,10 +98,6 @@ body {
 }
 .content {
 	width: 100%;
-	position: relative;
-	top: 2.5rem;
-	z-index: 1;
-	padding-bottom: 2.5rem;
 }
 .foot {
 	height: 2.5rem;
@@ -111,7 +107,6 @@ body {
 	position: fixed;
 	bottom: 0px;
 	background-color: #fff;
-	z-index: 3;
 	border-top: 1px solid gainsboro;
 }
 .dialog{
@@ -128,40 +123,39 @@ body {
 	z-index: 5;
 	position: fixed;
 	bottom: 0px;
-	height: 40%;
+	height: 50%;
 	width: 100%;
 	background-color: #fff;
 	visibility: hidden;
 }
 .dialog_body .dialog_title{
 	width: 100%;
-	background-color: #289eff;
-	height: 2rem;
+	background-color: #2fa0ff;
+	height: 2.5rem;
 }
 .dialog_body .dialog_title div{
 	float: left;
 	text-align: center;
-	line-height: 2rem;
-	height: 2rem;
+	line-height: 2.5rem;
+	height: 2.5rem;
 	color: #fff;
 	margin: auto 0px;
-	vertical-align: middle;
 }
 .dialog_body .dialog_title div:nth-child(1){
-	line-height: 1.5rem;
-	height: 1.5rem;
+	line-height: 2rem;
+	height: 2rem;
 	width: 20%;
-	border-right: 1px solid #fff;
+	border-right: 1px solid #A3A3A3;
 	margin-top: 0.25rem;
 }
 .dialog_body .dialog_title div:nth-child(2){
 	width: 60%;
 }
 .dialog_body .dialog_title div:nth-child(3){
-	line-height: 1.5rem;
-	height: 1.5rem;
+	line-height: 2rem;
+	height: 2rem;
 	width: 19%;
-	border-left: 1px solid #fff;
+	border-left: 1px solid #A3A3A3;
 	margin-top: 0.25rem;
 }
 /*按钮*/

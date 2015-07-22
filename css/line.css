@@ -55,14 +55,16 @@ a:active {
 	height: 2.5rem;
 	text-align: center;
 	line-height: 2.5rem;
+	box-sizing: border-box;
 	border-bottom: 1px solid gainsboro;
 	background-color: #fff;
 }
 .content_items{
-	margin-top: 2.5rem;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	width: 100%;
+	padding-top: 5rem;
+	padding-bottom: 2.5rem;
 }
 .shijian div{
 	float: left;
@@ -190,4 +192,24 @@ color: #a3a3a3;
 	font-size: .8rem;
 	text-align: center;
 	line-height: 1.1rem;
+}
+.dialog_content div{
+	height: 2rem;
+	line-height: 2rem;
+	border-bottom:1px solid gainsboro; 
+	font-size: 1rem;
+	color: #A3A3A3;
+	padding: 0 5%;
+	background-position:right;
+	background-size: 1rem 1rem;
+	background-origin: content-box;
+}
+.dialog_content div:last-child{
+	border-bottom:0;
+}
+.un-selected-station{
+	background: url(../img/station-list-2.png) no-repeat;
+}
+.selected-station{
+	background: url(../img/station-list-1.png) no-repeat;
 }

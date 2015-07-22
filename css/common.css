@@ -1,0 +1,191 @@
+* {
+	-webkit-user-select: none;
+	-ms-touch-select: none;
+/*
+	-ms-touch-action: none;
+*/
+}
+html {
+    font-size : 18px;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 23px!important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px!important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px!important; 
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px!important; 
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px!important; 
+    }
+}
+@media only screen and (min-width: 768px){
+    html {
+        font-size: 90px!important; 
+    }
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	text-decoration: none;
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: #6c6c6c;
+	-webkit-touch-callout:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-text-size-adjust:none;
+}
+
+.headig {
+	width: 100%;
+	height: 2.5rem;
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin-bottom: 0.8rem;
+	border-bottom: 1px solid gainsboro;
+	background-color: #FFFFFF;
+	z-index: 2;
+}
+.headig div {
+	height: 2.5rem;
+	float: left;
+	-webkit-user-select: none;
+}
+.headig p {
+	text-align: center;
+	line-height: 2.5rem;
+	color: #289eff;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.headig .back {
+	width: 20%;
+	background-image: url(../img/7.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:1rem 1rem;
+}
+.headig .title {
+	width: 60%;
+}
+.headig .other {
+	width: 20%;
+}
+.content {
+	width: 100%;
+	position: relative;
+	top: 2.5rem;
+	z-index: 1;
+	padding-bottom: 2.5rem;
+}
+.foot {
+	height: 2.5rem;
+	line-height: 2.5rem;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	background-color: #fff;
+	z-index: 3;
+	border-top: 1px solid gainsboro;
+}
+.dialog{
+		width: 100%;
+		height: 100%;
+		z-index: 4;
+		opacity:0.5;
+		position: fixed;
+		top: 2.5rem;
+		background-color: #000000;
+		visibility: hidden;
+}
+.dialog_body{
+	z-index: 5;
+	position: fixed;
+	bottom: 0px;
+	height: 40%;
+	width: 100%;
+	background-color: #fff;
+	visibility: hidden;
+}
+.dialog_body .dialog_title{
+	width: 100%;
+	background-color: #289eff;
+	height: 2rem;
+}
+.dialog_body .dialog_title div{
+	float: left;
+	text-align: center;
+	line-height: 2rem;
+	height: 2rem;
+	color: #fff;
+	margin: auto 0px;
+	vertical-align: middle;
+}
+.dialog_body .dialog_title div:nth-child(1){
+	line-height: 1.5rem;
+	height: 1.5rem;
+	width: 20%;
+	border-right: 1px solid #fff;
+	margin-top: 0.25rem;
+}
+.dialog_body .dialog_title div:nth-child(2){
+	width: 60%;
+}
+.dialog_body .dialog_title div:nth-child(3){
+	line-height: 1.5rem;
+	height: 1.5rem;
+	width: 19%;
+	border-left: 1px solid #fff;
+	margin-top: 0.25rem;
+}
+/*按钮*/
+.content_button {
+	height: 2.5rem;
+	margin: 5%;
+	text-align: center;
+	line-height: 2.5rem;
+	background: #289eff;
+	color: #fff;
+	font-size: .8rem;
+	font-weight: bold;
+	border-radius: .1rem;
+}
+input {
+	border: 0;
+	width: 100%;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background-color: #fff;
+	font-size: .6rem;
+	color: #595959;
+	lighting-color: #fff;
+}
+ul{
+	list-style-type: none;
+}

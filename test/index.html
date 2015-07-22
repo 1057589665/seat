@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link href="css/common.css" />
+		<title>hello world</title>
+
+	</head>
+
+	<body>
+		<div class="headig">
+			<div class="back"><p><a href="line.html">返回</a></p></div>
+			<div class="title"><p>hello word</p></div>
+			<div class="other"><p>呵呵</p></div>
+			
+		</div>
+		<div class="content">
+			<p>通过HTML5开发移动App时，会发现HTML5很多能力不具备。为弥补HTML5能力的不足，在W3C中国的指导下成立了www.html5plus.org组织，推出HTML5+规范。
+HTML5+规范是一个开放规范，允许三方浏览器厂商或其他手机runtime制造商实现。
+HTML5+扩展了JavaScript对象plus，使得js可以调用各种浏览器无法实现或实现不佳的系统能力，设备能力如摄像头、陀螺仪、文件系统等，业务能力如上传下载、二维码、地图、支付、语音输入、消息推送等。
+HBuilder的手机原生能力调用分2个层面：
+- 跨手机平台的能力调用都在HTML5+规范里，比如二维码、语音输入，使用plus.barcode和plus.speech。编写一次，可跨平台运行。
+- Native.js是另一项创新技术。手机OS的原生API有四十多万，大量的API无法被HTML5使用。Native.js把几十万原生API封装成了js对象，通过js可以直接调ios和android的原生API。这部分就不再跨平台，写法分别是plus.ios和plus.android，比如调ios game center，或在android手机桌面创建快捷方式。
+Native.js的用法示例，var obj= plus.android.import("android.content.Intent");，将一个原生对象android.content.Intent映射为js对象obj，然后在js里操作obj对象的方法属性就可以了。
+Native.js的详细教程可以参考：5+ App开发Native.js入门指南
+HTML5+ App
+使用HTML5+开发的移动App并非mobile web页面。这是新手最容易混淆的地方。mobile web的文件存放在web服务器上，而移动App的文件存放在手机本地，编写移动App的html、js、css文件被打包到ipa或apk等原生安装包，在手机客户端运行。
+用个更形象的列子，web app仍然是b/s结构，而移动App是c/s结构甚至是完全脱线的单机应用。
+这或许有点超过一些人的想象，他们认为HTML就是web、就是b/s，事实上javascript早已可通过nodejs等技术运行在服务器侧，而在HBuilder的移动App里，HTML、JS等文件也可以被打包成原生安装包。
+当然这些移动App里某些页面也可以继续从服务器端以网页方式下行，就像任何原生应用（如微信）都可以内嵌网页一样。
+所以mobile web，</p>
+		</div>
+		<div class="content_image">
+			ul.ul_image->li*6
+			
+		</div>
+		<div class="foot">
+			<div class="foot_left">价格10</div>
+			<div class="foot_right">提交订单</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!--,target-densitydpi=device-dp-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/line.css" />
+		<script type="text/javascript" src="js/mf.jquery.js"></script>
+		<script type="text/javascript" src="js/com.js" ></script>
+		<link href="css/mf.mobiscroll-2.6.2.min.css" rel="stylesheet" type="text/css" />
+		<script src="js/mf.mobiscroll-2.6.2.min.js" type="text/javascript"></script>
+		<title>填写订单</title>
+		<script type="text/javascript">
+			$(function() {
+				/*alert(document.documentElement.clientWidth)
+				 var style = document.body.currentStyle || document.defaultView.getComputedStyle(document.body, '')
+				alert(style.fontSize)*/
+				/*$('html,body').animate({scrollTop: '0px'}, 100);*///
+				$('#dialog').bind("touchmove",function(e){  
+             			  e.preventDefault();  
+				});
+				$('.dialog').bind("click",function(e){  
+             			$("#dialog").hide();
+//           			$('body').css('overflow-y','scroll')
+				});
+				$('.dialog_content div').bind("click",function(e){  
+             			if($(this).hasClass("selected-station")){
+             					$(this).removeClass("selected-station");
+             			}else{
+	             			$(this).addClass("selected-station");
+             			}
+				});
+				var curCount =3;
+				
+				$('.foot').bind("click",function(e){  
+             			$('#dialog').show();
+             			InterValObj = window.setInterval(function(){
+			            	 if (curCount == 0) {
+									window.clearInterval(InterValObj);//停止计时器
+									location.href="lineOrders.html";
+								} else {
+									curCount--;
+									$(".dialog_loading").text(curCount+"秒后跳转到列表");
+								}
+             			}, 1000);
+             		/*	$('.dialog').css('visibility','visible')
+             			$('.dialog_loading').css('visibility','visible')*/
+//           			$('body').css('overflow','hidden')
+				});
+				/*$('body').css('overflow','hidden')*/
+			/*	document.documentElement.style.cssText ='overflow:none;+overflow:hidden;_overflow:hidden;'
+				document.body.style.cssText = 'overflow:hidden;+overflow:none;_overflow:none;'*/
+				
+			})
+		</script>
+	</head>
+
+	<body>
+		<div class="headig">
+			<div class="back"></div>
+			<div class="title">
+				<p>填写订单</p>
+			</div>
+			<div class="other"></div>
+		</div>
+		<div class="content">
+			<div class="order_content">
+				<div class="content_one">2015-07-20 (周一) 08:00发车</div>
+				<div class="content_two"><span>凤凰</span><span>201</span><span>怀化</span></div>
+				<div class="content_three"><span>城北汽车站</span><span>怀化汽车站</span></div>
+				<div class="content_four"><span>车型:</span><span>奔驰19座</span><span>空位:</span><span>8个</span></div>
+			<div class="content_five"><img src="img/tixing.png">取票 退票 改签规定<img src="img/购票详情页3.png"></div>
+			</div>
+			
+			
+			<div class="order_product">
+				
+						<span>成人票</span>
+						<span>
+							<img src="img/购票详情页_03_1.png" />
+							<input name="" value="10" />
+							<img src="img/购票详情页_03_2.png" />
+						</span>
+						<span>￥10</span>
+					
+			</div>
+			<div class="order_product">
+				
+						<span>成人票</span>
+						<span>
+							<img src="img/购票详情页_03_1.png" />
+							<input name="" value="10" />
+							<img src="img/购票详情页_03_2.png" />
+						</span>
+						<span>￥10</span>
+					
+			</div>
+		
+			
+			<div class="order_tel">
+				
+						<span>手机号:</span>
+							<input name="" value="" placeholder="请输入手机号" />
+					
+			</div>
+		</div>
+		<div class="foot">
+			<div class="order_price">
+				<span>总计:</span>
+				<span>￥</span>
+				<span>100000.00</span>
+			</div>
+			<div class="order_submit">
+				提交订单
+			</div>
+		</div>
+		<div id="dialog">
+		<div class="dialog">
+			</div>
+			
+			<div class="dialog_loading">
+				正在加载
+			</div>
+			
+		</div>
+	</body>
+
+</html>

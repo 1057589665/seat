@@ -1,54 +1,52 @@
-* {
+div,span{
 	-webkit-user-select: none;
 	-ms-touch-select: none;
-/*
 	-ms-touch-action: none;
-*/
+	
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
 }
 html {
-    font-size : 18px;
+	font-size: 18px;
 }
-@media only screen and (min-width: 401px){
-    html {
-        font-size: 23px!important;
-    }
+@media only screen and (min-width: 401px) {
+	html {
+		font-size: 23px!important;
+	}
 }
-@media only screen and (min-width: 428px){
-    html {
-        font-size: 26.75px!important;
-    }
+@media only screen and (min-width: 428px) {
+	html {
+		font-size: 26.75px!important;
+	}
 }
-@media only screen and (min-width: 481px){
-    html {
-        font-size: 30px!important; 
-    }
+@media only screen and (min-width: 481px) {
+	html {
+		font-size: 30px!important;
+	}
 }
-@media only screen and (min-width: 569px){
-    html {
-        font-size: 35px!important; 
-    }
+@media only screen and (min-width: 569px) {
+	html {
+		font-size: 35px!important;
+	}
 }
-@media only screen and (min-width: 641px){
-    html {
-        font-size: 40px!important; 
-    }
+@media only screen and (min-width: 641px) {
+	html {
+		font-size: 40px!important;
+	}
 }
-@media only screen and (min-width: 768px){
-    html {
-        font-size: 90px!important; 
-    }
+@media only screen and (min-width: 768px) {
+	html {
+		font-size: 90px!important;
+	}
 }
 * {
 	margin: 0;
 	padding: 0;
 }
 a {
-	-webkit-tap-highlight-color: transparent;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
 	text-decoration: none;
 }
-
 body {
 	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 	margin: 0;
@@ -60,7 +58,6 @@ body {
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 	-webkit-text-size-adjust:none;
 }
-
 .headig {
 	width: 100%;
 	height: 2.5rem;
@@ -85,10 +82,10 @@ body {
 }
 .headig .back {
 	width: 20%;
-	background-image: url(../img/7.png);
+	background-image: url(../img/bt_return.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size:1rem 1rem;
+	background-size: 1rem 1rem;
 }
 .headig .title {
 	width: 60%;
@@ -98,6 +95,9 @@ body {
 }
 .content {
 	width: 100%;
+	margin: 2.5rem 0;
+/*	overflow-y: scroll;
+	overflow-x: hidden;*/
 }
 .foot {
 	height: 2.5rem;
@@ -109,31 +109,37 @@ body {
 	background-color: #fff;
 	border-top: 1px solid gainsboro;
 }
-.dialog{
-		width: 100%;
-		height: 100%;
-		z-index: 4;
-		opacity:0.5;
-		position: fixed;
-		top: 2.5rem;
-		background-color: #000000;
-		visibility: hidden;
+#dialog {
+	display: none;
 }
-.dialog_body{
-	z-index: 5;
+.dialog {
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	position: fixed;
+	top: 2.5rem;
+	background-color: #000000;
+}
+.dialog_loading {
+	position: fixed;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+.dialog_body {
 	position: fixed;
 	bottom: 0px;
 	height: 50%;
 	width: 100%;
 	background-color: #fff;
-	visibility: hidden;
 }
-.dialog_body .dialog_title{
+.dialog_body .dialog_title {
 	width: 100%;
 	background-color: #2fa0ff;
 	height: 2.5rem;
 }
-.dialog_body .dialog_title div{
+.dialog_body .dialog_title div {
 	float: left;
 	text-align: center;
 	line-height: 2.5rem;
@@ -141,17 +147,17 @@ body {
 	color: #fff;
 	margin: auto 0px;
 }
-.dialog_body .dialog_title div:nth-child(1){
+.dialog_body .dialog_title div:nth-child(1) {
 	line-height: 2rem;
 	height: 2rem;
 	width: 20%;
 	border-right: 1px solid #A3A3A3;
 	margin-top: 0.25rem;
 }
-.dialog_body .dialog_title div:nth-child(2){
+.dialog_body .dialog_title div:nth-child(2) {
 	width: 60%;
 }
-.dialog_body .dialog_title div:nth-child(3){
+.dialog_body .dialog_title div:nth-child(3) {
 	line-height: 2rem;
 	height: 2rem;
 	width: 19%;
@@ -159,6 +165,7 @@ body {
 	margin-top: 0.25rem;
 }
 /*按钮*/
+
 .content_button {
 	height: 2.5rem;
 	margin: 5%;
@@ -175,11 +182,13 @@ input {
 	width: 100%;
 	height: 2.5rem;
 	line-height: 2.5rem;
-	background-color: #fff;
-	font-size: .6rem;
-	color: #595959;
+	font-size: 1rem;
 	lighting-color: #fff;
+	outline: medium;
 }
-ul{
+/*input:focus {
+	background-color: #000;
+}*/
+ul {
 	list-style-type: none;
 }

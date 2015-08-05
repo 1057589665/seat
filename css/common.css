@@ -37,7 +37,7 @@ html {
 }
 @media only screen and (min-width: 768px) {
 	html {
-		font-size: 90px!important;
+		font-size: 50px!important;
 	}
 }
 * {
@@ -96,8 +96,8 @@ body {
 .content {
 	width: 100%;
 	margin: 2.5rem 0;
-/*	overflow-y: scroll;
-	overflow-x: hidden;*/
+/*	overflow-y: scroll;*/
+	overflow-x: hidden;
 }
 .foot {
 	height: 2.5rem;

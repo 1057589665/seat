@@ -1,0 +1,38 @@
+.seat{
+	padding: 1rem 1rem;
+	overflow: scroll;
+}
+.seat ul{
+	list-style-type: none;
+}
+.seat ul li{
+	height: 1.2rem;
+	display: -webkit-box;
+	margin: .1rem auto;
+}
+.seat ul li a{
+	margin: 0 .1rem;
+	height: 1rem;
+	display: block;
+	width: 1rem;
+}
+.seat ul li a{
+	background-color: #00B72F;
+}
+.seat .active{
+	background-color: red;
+}
+.seat .disabled{
+	background-color: #fff;
+}
+.seat .sale{
+	background-color: #fff;
+}
+.seatText{
+}
+.seatText span{
+	float: left;
+	display: block;
+	border: 1px solid gainsboro;
+	white-space: nowrap;
+}

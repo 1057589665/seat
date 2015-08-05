@@ -347,18 +347,19 @@ a:active {
 .order_tel input {
 	width: 50%;
 }
-填写订单页面
+/*填写订单页面*/
 /*订单列表*/
 
 .search {
-	height: 2.5rem;
+	height: 3rem;
+	border-bottom: 1px solid gainsboro;
 }
 .search input {
 	height: 2rem;
-	width: 80%;
+	width: 70%;
 	padding-left: 2rem;
-	line-height: 2rem;
-	margin: .25rem 10%;
+	margin: .5rem 10%;
+	line-height:2rem;
 	text-align: left;
 	border: 1px solid gainsboro;
 	border-radius: 2rem;

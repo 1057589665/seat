@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
 		<link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/line.css" />
 		<link rel="stylesheet" href="css/seat.css" />
@@ -14,6 +14,14 @@
 			$(function() {
 				$(".content_button").on("tap", function() {
 					location.href="lines.html";
+				});
+				$(".seat div").on("tap", function() {
+					if( $(this).hasClass("zoom")){
+						$(this).removeClass('zoom'); 
+					}else{
+						$(this).addClass('zoom'); 
+					}
+					
 				});
 			})
 		</script>
@@ -29,8 +37,10 @@
 		</div>
 		<div class="content">
 			<div class="seat">
+				<div>
 				<ul>
 				</ul>
+				</div>
 			</div>
 			<div class="seatText"></div>			
 		</div>
